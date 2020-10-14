@@ -4,14 +4,14 @@
 
 def acronomyzer(sentence)
   words = sentence.split
-  letters = ""
+  letters = []
 
   words.each do |word|
     letter = word[0]
-    letters += letter
+    letters << letter
   end
 
-  letters.upcase
+  letters.join.upcase
 end
 
 # Acronymizer method (of sorts)
