@@ -17,7 +17,7 @@ B) 1-1: One to One. For example, a company has one boss.
 
 C) N-N: Many to Many. For example, a doctor has many patients,
   and a patient has many doctors. For this to work, two tables
-  are not enough.. We need a third one.
+  are not enough.. We need a third one, which is the JOIN TABLE.
   So what we have here is: patients, doctors and consultations
   And the consultations table will have both patient_id and
   doctor_id
