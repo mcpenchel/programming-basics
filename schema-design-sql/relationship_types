@@ -1,0 +1,23 @@
+The relationship types that we have on a relation database are:
+
+A) 1-N: One to Many. For example, a user has many telephones..
+  So on this case, we would have two tables: users and telephones.
+  And on the telephones table, we would have the column user_id
+
+  So, if X has many Y, we will have x_id on the Y table
+
+B) 1-1: One to One. For example, a company has one boss.
+  So in this case, we would have two tables: users and bosses.
+  If it's one to one, you have to choose:
+    - users table will have the boss_id column
+    OR
+    - bosses table will have the user_id column
+
+  For 1-1 relationships, it doesn't matter.
+
+C) N-N: Many to Many. For example, a doctor has many patients,
+  and a patient has many doctors. For this to work, two tables
+  are not enough.. We need a third one.
+  So what we have here is: patients, doctors and consultations
+  And the consultations table will have both patient_id and
+  doctor_id
