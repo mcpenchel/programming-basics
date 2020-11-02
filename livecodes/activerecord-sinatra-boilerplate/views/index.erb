@@ -1,0 +1,19 @@
+<h1>Best Bossa Nova Restaurants</h1>
+
+<hr>
+  <form action="restaurants" method="POST">
+    <label for="name">Name</label>
+    <input type="text" name="name">
+    <label for="address">Address</label>
+    <input type="text" name="address">
+    <label for="cuisine">Cuisine</label>
+    <input type="text" name="cuisine">
+    <input type="submit" value="Create a restaurant">
+  </form>
+<hr>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><a href="restaurants/<%= restaurant.id %>"><%= restaurant.name %></a></li>
+  <% end %>
+</ul>
