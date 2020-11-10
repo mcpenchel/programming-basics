@@ -1,0 +1,8 @@
+.img-circle {
+  border-radius: 50%;
+  transition: all 2s ease;
+}
+
+.big {
+  font-size: 20px;
+}
