@@ -11,6 +11,8 @@ console.log("Hello from src/index.js!");
   // returns a NodeList (array) with all the elements found
   document.querySelectorAll('.the_class_name')
 
+  // getElementById is the querySelector for ids, so you don't specify
+  // the # in the beginning of the string
   document.getElementById('the_id')
 
 // Append Content
@@ -43,13 +45,13 @@ console.log("Hello from src/index.js!");
 // Inputs
   const emailInput = document.querySelector('input');
 
-  emailInput.value // to see the value written inside the input
-  emailInput.value = 'new value' // to change the value inside the input
+  emailInput.value // to get the value written inside the input
+  emailInput.value = 'new@email.com' // to change the value inside the input
 
 // innerText VS innerHTML
   // reading
-  document.getElementById('welcome').innerText
-  document.getElementById('welcome').innerHTML
+  document.getElementById('welcome').innerText // gives us the TEXT
+  document.getElementById('welcome').innerHTML // gives us the HTML
 
   // writing
   document.getElementById('welcome').innerText = "Rowan is a front-end guru"
